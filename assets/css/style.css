@@ -5,3 +5,13 @@
 ul {
     list-style: none;
 }
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: aliceblue;
+}
