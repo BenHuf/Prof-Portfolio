@@ -1,29 +1,50 @@
 :root {
-
+    --primary-color: #0353ff;
+    --secondary-color: #ffaf03;
+    --tertiary-color: #4afcff;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 a {
     text-decoration: none;
 }
+
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    background-color: red;
+    background-color: var(--secondary-color);
     margin-bottom: 0;
+    align-items: center;
 }
 
 header h1 {
     font-weight: bold;
     margin: 0;
-    font-size: 45px;
+    font-size: 5.5vw;
+    color: var(--tertiary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header span {
+    font-size: 10px;
+    font-weight: lighter;
 }
 
 header div {
-    background-color: blue;
+    background-color: var(--primary-color);
     margin: 20px 0; 
-    padding-left: 30px;
+    padding: 0 10px 0 30px;
 }
 
 header nav {
+    margin: 20px;
 }
 
 header nav ul {
@@ -36,6 +57,13 @@ header nav ul {
 
 header nav ul li {
     padding: 10px;
+    align-items: center;
+    font-size: 2.5vw;
+    margin: 5px;
+}
+
+header nav ul li a {
+    border-bottom: 3px solid var(--primary-color);
 }
 
 .cards {
@@ -45,10 +73,43 @@ header nav ul li {
 }
 
 .card {
-    background-color: red;
+    background-color: var(--tertiary-color);
 }
 
 .flex-row {
     display: flex;
-    flex: 0 50%;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    font-size: 48px;
+    border-bottom: 3px solid;
+    color: var(--secondary-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.about-me p {
+    width: 80%;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.img-div {
+    background-image: url(../images/ryland-dean-6k6N8HTrXyE-unsplash.jpg);
+    padding: 50px;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 400px;
+}
+
+.img-div h2 {
+    background-color: #ffaf03;
+    padding: 10px;
+    font-size: 28px;
 }
