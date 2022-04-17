@@ -8,6 +8,7 @@
     <title>BenHuf</title>
 </head>
 <body>
+   
     <!-- Header and nav section -->
     <header>
         <div>
@@ -16,13 +17,13 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#About-Me">About Me</a>
+                    <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="#Work">Work</a>
+                    <a href="#work">Work</a>
                 </li>
                 <li>
-                    <a href="#Contact-Me">Contact Me</a>
+                    <a href="#contact-me">Contact Me</a>
                 </li>
                 <li>
                     <a href="#">Resume</a>
@@ -31,73 +32,103 @@
         </nav>        
     </header>
 
-    <section>
-        <div class="img-div">
+    <!-- Most boring hero ever -->
+    <div class="hero">
             <h2>Cool subtitle here!</h2>
-        </div>
-    </section>
+    </div>
 
 
     <!-- Main content -->
     <Main>
+
         <!-- About me section-->
-        <section class="about-me">
-            <div class="flex-row"> 
-                <h2 class="section-title">About Me</h2>
+        <section id="about-me">
+            <div class="flex-row title"> 
+                <h2 class="section-title">About</br>Me</h2>
             </div>
-            <p class="flex-row">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eaque, ducimus aut minima mollitia nobis dignissimos repellat aperiam amet eos culpa nam molestiae inventore? Iure et nulla eligendi totam aperiam!
-            </p>
+            <div class="flex-row content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eaque, ducimus aut minima mollitia nobis dignissimos repellat aperiam amet eos culpa nam molestiae inventore? Iure et nulla eligendi totam aperiam!
+                    </br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sequi minus velit temporibus magnam facilis sunt. Alias rem autem est iste enim. Nisi aperiam eaque molestiae odio, numquam quaerat repellat!
+                    </br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis beatae eaque esse rerum eligendi distinctio autem, delectus voluptates exercitationem explicabo enim quia reprehenderit repellat, praesentium suscipit ducimus cumque cupiditate maxime!
+                </p>
+            </div>
         </section>
 
         <!-- Work section -->
-        <section id="Work">
-            <h2 class="flex-row">Work</h2>
-            <div>
-                <section class="cards">
-                    <article class="card">
-                        <a href="">
-                            <h3>Run Buddy</h3>
-                            HTML/CSS
-                        </a>
-                    </article>
-                    <article class="card">
-                        <a href="">
-                            <h3>Run Buddy</h3>
-                            HTML/CSS
-                        </a>
-                    </article>
-                    <article class="card">
-                        <a href="">
-                            <h3>Run Buddy</h3>
-                            HTML/CSS
-                        </a>
-                    </article>
-                    <article class="card">
-                        <a href="">
-                            <h3>Run Buddy</h3>
-                            HTML/CSS
-                        </a>
-                    </article>
-                    <article class="card">
+        <section id="work">
+            <div class="flex-row title">
+                <h2 class="section-title">Work</h2>
+            </div>
 
-                    </article>
-                </section>
+            <!-- Works Cards -->
+            <div class="flex-row cards content">
+                <article class="card-featured card card1">
+                    <a href="">
+                        <div>
+                            <h3>Run Buddy</h3>
+                            <p>HTML/CSS</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Breakdiv to force next card onto seperate row -->
+                <div class="break">
+
+                </div>
+                <article class="card card2">
+                    <a href="">
+                        <div>
+                            <h3>Run Buddy</h3>
+                            <p>HTML/CSS</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card card3">
+                    <a href="">
+                        <div>
+                            <h3>Run Buddy</h3>
+                            <p>HTML/CSS</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card card4">
+                    <a href="">
+                        <div>
+                            <h3>Run Buddy</h3>
+                            <p>HTML/CSS</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card card5">
+                    <a href="">
+                        <div>
+                            <h3>Run Buddy</h3>
+                            <p>HTML/CSS</p>
+                        </div>
+                    </a>
+                </article>
             </div>
         </section>
 
         <!-- Contact me section -->
-        <section id="Contact-Me">
-            <h2 class="flex-row">Contact Me</h2>
-            <ul>
-                <li><a href="">252.939.5698</a></li>
-                <li><a href="">benthehuffman@gmail.com</a></li>
-                <li><a href=""></a>GitHub</li>
-                <li><a href=""></a>Twitter</li>
-                <li><a href=""></a>Spotify</li>
-                
-            </ul>
+        <section id="contact-me">
+            <div class="title contact-title">
+                <h2 class="section-title">Contact</br>Me</h2>
+            </div>
+            <div class="content contact">
+                <ul>
+                    <li><a href="">252.939.5698</a></li>
+                    <li><a href="">benthehuffman@gmail.com</a></li>
+                    <li><a href=""></a>GitHub</li>
+                    <li><a href=""></a>Twitter</li>
+                    <li><a href=""></a>Spotify</li>
+                </ul>
+            </div>
         </section>
+
     </Main>
 </body>
 </html>

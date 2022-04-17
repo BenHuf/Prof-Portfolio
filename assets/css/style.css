@@ -1,13 +1,14 @@
+/* Global Styles and Variables */
 :root {
-    --primary-color: #0353ff;
-    --secondary-color: #ffaf03;
-    --tertiary-color: #4afcff;
+    --primary-color: hsl(221, 55%, 34%);
+    --secondary-color: rgb(52, 51, 51);
+    --tertiary-color: #ffffff;
 }
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: var(--secondary-color)
 }
 
 
@@ -15,39 +16,48 @@ a {
     text-decoration: none;
 }
 
+/* Header and Nav Styles */
 header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     background-color: var(--secondary-color);
-    margin-bottom: 0;
     align-items: center;
+    height: 100px;
 }
 
 header h1 {
-    font-weight: bold;
-    margin: 0;
-    font-size: 5.5vw;
-    color: var(--tertiary-color);
+    font-size: 5vw;
+    color: var(--secondary-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header span {
     font-size: 10px;
     font-weight: lighter;
+    color: var(--secondary-color);
+}
+
+h1 span {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 header div {
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     margin: 20px 0; 
-    padding: 0 10px 0 30px;
+    padding: 0 10px 0 40px;
 }
 
 header nav {
     margin: 20px;
+    display: flex;
 }
 
-header nav ul {
+header ul {
+    margin-right: 30px;
+}
+
+ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -56,60 +66,149 @@ header nav ul {
 }
 
 header nav ul li {
-    padding: 10px;
     align-items: center;
-    font-size: 2.5vw;
-    margin: 5px;
+    font-size: 1.75vw;
+    margin: 7px;
+    padding 0 5px;
 }
 
 header nav ul li a {
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 3px solid var(--tertiary-color);
+    color: var(--tertiary-color);
 }
 
-.cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
-.card {
-    background-color: var(--tertiary-color);
-}
-
-.flex-row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.section-title {
-    font-size: 48px;
-    border-bottom: 3px solid;
-    color: var(--secondary-color);
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-}
-
-.about-me p {
-    width: 80%;
-    display: flex;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.img-div {
-    background-image: url(../images/ryland-dean-6k6N8HTrXyE-unsplash.jpg);
-    padding: 50px;
+/* Hero styles */
+.hero {
+    background-image: url(../images/02-hero-bg.jpg);
     background-size: cover;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    height: 400px;
+    height: 225px;
 }
 
-.img-div h2 {
-    background-color: #ffaf03;
+.hero h2 {
+    background-color: var(--tertiary-color);
     padding: 10px;
     font-size: 28px;
+    margin: 0 75px 20px 0;
+}
+
+
+/* About me section styles */
+section {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 40px 0 40px;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 180px;
+    font-size: 48px;
+    color: var(--secondary-color);
+    justify-content: flex-end;
+}
+
+.content {
+    flex-basis: 70%;
+    flex-grow: 3;
+    margin: 0 3.5% 0 0;
+    align-items: flex-start;
+    border-left: 3px solid var(--primary-color);
+    padding-left: 20px;
+    height: fit-content;
+}
+
+.section-title {
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: var(--secondary-color);
+    text-align: right;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+.flex-row {
+    display: flex;
+}
+
+/* Work section styles */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.cards article {
+    border: 3px solid var(--primary-color);
+    box-sizing: border-box;
+    
+}
+
+.break {
+    height: 0;
+    flex-basis: 100%;
+}
+
+.card {
+    background-size: cover;
+    flex-basis: 49%;
+    border: 3px solid var(--primary-color);
+    box-sizing: border-box;
+    padding: 40px;
+    margin: 10px 0;
+}
+
+.card:first-of-type {
+    background-image: url(../images/02-portfolio-1.jpg);
+    background-size: cover;
+    align-items: flex-end;
+    padding: 100px;
+    flex-basis: 100%;
+    height: 600px;
+    margin: 0 0 10px 0;
+}
+
+.card2 {
+    background-image: url(../images/02-portfolio-2.jpg);
+}
+
+.card3 {
+    background-image: url(../images/02-portfolio-3.jpg);
+}
+
+.card4 {
+    background-image: url(../images/02-portfolio-4.jpg);
+    margin-bottom: 0;
+}
+
+.card5 {
+    background-image: url(../images/02-run-buddy.jpg);
+    margin-bottom: 0;
+}
+
+/* Contact me section styles */
+.contact {
+    align-items: center;
+    padding: 40px;
+    height: auto;
+}
+
+.contact-title {
+    height: fit-content;
+}
+
+.contact ul {
+    align-items: center;
+}
+
+.contact li {
+    padding: 5px;
+    border-bottom: 3px solid var(--secondary-color);
+    font-size: 1.5vw;
 }
