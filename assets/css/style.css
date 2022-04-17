@@ -1,14 +1,15 @@
 /* Global Styles and Variables */
 :root {
     --primary-color: hsl(221, 55%, 34%);
-    --secondary-color: rgb(52, 51, 51);
-    --tertiary-color: #ffffff;
+    --secondary-color: rgb(48, 48, 54);
+    --tertiary-color: #80c4c2;
 }
 
 * {
     margin: 0;
     padding: 0;
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    font-family: sans-serif;
 }
 
 
@@ -26,20 +27,18 @@ header {
 }
 
 header h1 {
-    font-size: 5vw;
+    font-size: 4.5vw;
     color: var(--secondary-color);
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 header span {
-    font-size: 10px;
+    font-size: .8vw;
     font-weight: lighter;
     color: var(--secondary-color);
-}
-
-h1 span {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: inline-block;
+    align-items: center;
 }
 
 header div {
@@ -67,14 +66,14 @@ ul {
 
 header nav ul li {
     align-items: center;
-    font-size: 1.75vw;
+    font-size: 20px;
     margin: 7px;
-    padding 0 5px;
 }
 
 header nav ul li a {
-    border-bottom: 3px solid var(--tertiary-color);
+    border-bottom: 4px solid var(--tertiary-color);
     color: var(--tertiary-color);
+    padding: 0 10px 3px 10px;
 }
 
 
@@ -85,7 +84,8 @@ header nav ul li a {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    height: 225px;
+    height: 215px;
+    width: 100%;
 }
 
 .hero h2 {
@@ -100,16 +100,16 @@ header nav ul li a {
 section {
     display: flex;
     justify-content: space-between;
-    margin: 40px 40px 0 40px;
+    margin: 40px 40px 0 0;
 }
 
 .title {
     display: flex;
     flex-wrap: wrap;
-    flex: 0 0 180px;
-    font-size: 48px;
+    flex: 0 0 20%;
     color: var(--secondary-color);
     justify-content: flex-end;
+    height: auto;
 }
 
 .content {
@@ -117,15 +117,15 @@ section {
     flex-grow: 3;
     margin: 0 3.5% 0 0;
     align-items: flex-start;
-    border-left: 3px solid var(--primary-color);
+    border-left: 3px solid var(--secondary-color);
     padding-left: 20px;
-    height: fit-content;
+    height: auto;
 }
 
 .section-title {
-    font-size: 48px;
+    font-size: 4vw;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     color: var(--secondary-color);
     text-align: right;
     align-items: flex-end;
@@ -144,52 +144,53 @@ section {
     box-sizing: border-box;
 }
 
-.cards article {
-    border: 3px solid var(--primary-color);
-    box-sizing: border-box;
-    
-}
-
 .break {
     height: 0;
     flex-basis: 100%;
 }
 
 .card {
+    display: flex;
     background-size: cover;
     flex-basis: 49%;
-    border: 3px solid var(--primary-color);
+    border: 3px solid var(--tertiary-color);
     box-sizing: border-box;
-    padding: 40px;
+    height: 125px;
     margin: 10px 0;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
-.card:first-of-type {
-    background-image: url(../images/02-portfolio-1.jpg);
-    background-size: cover;
-    align-items: flex-end;
-    padding: 100px;
+.card1 {
+    background-image: url(../images/02-portfolio-4.jpg);
     flex-basis: 100%;
-    height: 600px;
-    margin: 0 0 10px 0;
+    height: 300px;
+    margin: 0;
 }
 
 .card2 {
-    background-image: url(../images/02-portfolio-2.jpg);
+    background-image: url(../images/02-portfolio-1.jpg);
 }
 
 .card3 {
-    background-image: url(../images/02-portfolio-3.jpg);
+    background-image: url(../images/02-portfolio-2.jpg);
 }
 
 .card4 {
-    background-image: url(../images/02-portfolio-4.jpg);
+    background-image: url(../images/02-portfolio-3.jpg);
     margin-bottom: 0;
 }
 
 .card5 {
     background-image: url(../images/02-run-buddy.jpg);
     margin-bottom: 0;
+}
+
+.card-text {
+    background-color: var(--tertiary-color);
+    padding: 10px;
 }
 
 /* Contact me section styles */
@@ -212,3 +213,96 @@ section {
     border-bottom: 3px solid var(--secondary-color);
     font-size: 1.5vw;
 }
+
+#contact-me {
+    margin-bottom: 10px;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+   * {
+       padding: 0;
+       margin: 0;
+   }
+
+   br {
+       display: none;
+   }
+    /* Header Styles */
+    header {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        height: 150px;
+    }
+
+    header div {
+        width: 100%;
+        height: 75px;
+        margin: 0;
+        text-align: center;
+    }
+    
+    header h1 {
+        font-size: 70px;
+    }
+
+    header span {
+        font-size: 15px;
+        transform: rotate(0deg);
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header ul {
+        width: 100%;
+        justify-content: center;   
+        align-items: flex-start; 
+    }
+
+    /* Work section styles */
+    section {
+        flex-wrap: wrap;
+        padding: 0 40px;
+        margin: 10px 0;
+    }
+
+    .title {
+        flex-basis: 100%;
+        width: auto;
+        justify-content: flex-start;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .section-title {
+        margin-right: 0;
+        font-size: 55px;
+    }
+    
+    .content {
+        border-left: none;
+        border-top: 3px solid var(--secondary-color);
+        padding: 10px 0;
+        margin: 0;
+        line-height: 1.3;
+    }
+
+    .contact ul {
+        padding: 0 20px;
+    }
+}
+
+
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+}
+
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
