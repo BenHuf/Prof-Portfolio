@@ -27,3 +27,7 @@ section h2 {
 .education p {
     font-style: italic;
 }
+
+header div:hover {
+    background-image: linear-gradient(to bottom, rgb(177, 177, 177), white);
+}
