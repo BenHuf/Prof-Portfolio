@@ -13,9 +13,14 @@
     font-family: sans-serif;
 }
 
-
 a {
     text-decoration: none;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 40px 0 0;
 }
 
 /* Header and Nav Styles */
@@ -82,7 +87,7 @@ header div:hover {
     background-image: linear-gradient(to bottom, rgb(177, 177, 177), white);
 }
 
-/* Code from JS Fiddle */
+/* sweep-to-top hover animation adapted from https://jsfiddle.net/vinaykumar0459/h4vobaje/ */
 header .animate {
     display: inline-block;
     vertical-align: middle;
@@ -130,7 +135,7 @@ header .animate:hover:before, header .animate:focus:before, header .animate:acti
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
 }
-/* Code from JSFiddle */
+/* End adapted snippet -- Thanks vinaykumar0459 */
 
 /* Hero styles */
 .hero {
@@ -168,12 +173,6 @@ header .animate:hover:before, header .animate:focus:before, header .animate:acti
 }
 
 /* About me section styles */
-section {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 40px 0 0;
-}
-
 .title {
     display: flex;
     flex-wrap: wrap;
@@ -298,7 +297,7 @@ section {
     margin-bottom: 10px;
 }
 
-/* Code from JS Fiddle */
+/* sweep-to-top hover animation adapted from https://jsfiddle.net/vinaykumar0459/h4vobaje/ */
 #contact-me .animate {
     display: inline-block;
     vertical-align: middle;
@@ -346,7 +345,7 @@ section {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
 }
-/* Code from JSFiddle */
+/* End adapted snippet -- Thanks vinaykumar0459 */
 
 /* MEDIA QUERY FOR 1080p DESKTOP DISPLAYS */
 @media screen and (max-width: 1080px) {
