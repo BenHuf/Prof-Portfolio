@@ -251,10 +251,12 @@ header .animate:hover:before, header .animate:focus:before, header .animate:acti
 
 .card2 {
     background-image: url(../images/02-portfolio-1.jpg);
+    margin-bottom: 0;
 }
 
 .card3 {
     background-image: url(../images/02-portfolio-2.jpg);
+    margin-bottom: 0;
 }
 
 .card4 {
