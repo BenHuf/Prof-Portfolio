@@ -361,9 +361,10 @@ header .animate:hover:before, header .animate:focus:before, header .animate:acti
        margin: 0;
    }
 
-   br {
+   .section-title br {
        display: none;
    }
+   
     /* Header Styles */
     header {
         flex-wrap: wrap;
